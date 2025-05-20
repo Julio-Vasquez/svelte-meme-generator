@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
-  export let username = ''
   let memeUrl: string = ''
   let loading: boolean = false
 
@@ -27,9 +26,9 @@
       <img src={memeUrl} alt="meme" class="logo" />
     {/if}
   </div>
-  <h1>👋 ¡Hola, {username}!</h1>
+  <h1>👋 ¡Hola, Esta app genera un meme random solo para ti 😎!</h1>
   <div>
-    <p class="subtext">Esta app genera un meme random solo para ti 😎</p>
+    <p class="subtext"></p>
   </div>
 
   <button on:click={generateMeme}>Generar meme random</button>
